@@ -13,9 +13,9 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,37 +29,52 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5em;
+  gap: 2em;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: #1f3c4d;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #25d366;
 }
 
 .main-content {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 3em 2em;
 }
 
 section {
-  margin-bottom: 3em;
+  margin-bottom: 4em;
+}
+
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.4em;
 }
 
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .galeria img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: cover;
+  height: 200px;
 }
 
 .whatsapp-button {
@@ -70,6 +85,12 @@ section {
   border-radius: 8px;
   display: inline-block;
   margin-top: 1em;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
 }
 
 .whatsapp-float {
@@ -86,13 +107,18 @@ section {
   line-height: 60px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
   z-index: 1000;
+  transition: background 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #1da851;
 }
 
 footer {
   background-color: #1f3c4d;
   color: white;
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .volver-inicio {
@@ -112,10 +138,16 @@ footer {
   .container {
     flex-direction: column;
     align-items: center;
+    gap: 1em;
   }
+
   .nav-links {
     flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
+    gap: 0.8em;
+    text-align: center;
+  }
+
+  .galeria img {
+    height: auto;
   }
 }
