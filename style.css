@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1f3c4d;
+}
+
+.overlay {
+  background: url('fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  text-align: center;
+  padding: 4em 1em;
+  color: #1f3c4d;
+}
+
+.logo {
+  max-width: 180px;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+}
+
+.buttons {
+  margin-top: 2em;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.8em 1.5em;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #1da851;
+}
+
+.explore {
+  background-color: #1f3c4d;
+}
+
+.explore:hover {
+  background-color: #162c38;
+}
