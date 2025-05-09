@@ -1,0 +1,150 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1f3c4d;
+}
+
+.overlay {
+  background: url('fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  text-align: center;
+  padding: 4em 1em;
+  color: #1f3c4d;
+}
+
+.logo {
+  max-width: 180px;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+}
+
+.buttons {
+  margin-top: 2em;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.8em 1.5em;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #1da851;
+}
+
+.explore {
+  background-color: #1f3c4d;
+}
+
+.explore:hover {
+  background-color: #162c38;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding: 0;
+  margin: 1em 0;
+}
+
+nav ul li a {
+  color: #1f3c4d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2em 1em;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1em;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.whatsapp-button {
+  background-color: #25d366;
+  color: white;
+  padding: 0.8em 1.2em;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+footer {
+  background: #1f3c4d;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.volver-inicio {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background: #1f3c4d;
+  color: white;
+  padding: 0.6em 1em;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .btn {
+    font-size: 1em;
+    padding: 0.6em 1em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
