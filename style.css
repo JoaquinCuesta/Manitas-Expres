@@ -3,87 +3,63 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
   color: #1f3c4d;
 }
 
-.overlay {
-  background: url('fondo.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-blend-mode: lighten;
-  text-align: center;
-  padding: 4em 1em;
-  color: #1f3c4d;
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
-  max-width: 180px;
-  width: 80%;
-  margin-bottom: 1em;
+  height: 60px;
 }
 
-h1, h2 {
-  margin-bottom: 0.5em;
-}
-
-.buttons {
-  margin-top: 2em;
-}
-
-.btn {
-  display: inline-block;
-  margin: 0.5em;
-  padding: 0.8em 1.5em;
-  background-color: #25d366;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.1em;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #1da851;
-}
-
-.explore {
-  background-color: #1f3c4d;
-}
-
-.explore:hover {
-  background-color: #162c38;
-}
-
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
+  gap: 1.5em;
   padding: 0;
-  margin: 1em 0;
+  margin: 0;
 }
 
-nav ul li a {
-  color: #1f3c4d;
+.nav-links li a {
   text-decoration: none;
+  color: #1f3c4d;
   font-weight: bold;
 }
 
-section {
+.main-content {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 2em 1em;
+}
+
+section {
+  margin-bottom: 3em;
 }
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1em;
 }
 
 .galeria img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .whatsapp-button {
@@ -113,11 +89,10 @@ section {
 }
 
 footer {
-  background: #1f3c4d;
+  background-color: #1f3c4d;
   color: white;
   text-align: center;
   padding: 1em;
-  margin-top: 2em;
 }
 
 .volver-inicio {
@@ -133,18 +108,14 @@ footer {
   z-index: 999;
 }
 
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  .btn {
-    font-size: 1em;
-    padding: 0.6em 1em;
-  }
-
-  nav ul {
+@media screen and (max-width: 768px) {
+  .container {
     flex-direction: column;
     align-items: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
   }
 }
